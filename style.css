@@ -7,10 +7,22 @@
 }
 
 body {
-  height: 500vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  scroll-behavior: smooth;
   background: linear-gradient(to bottom, #33425b, #5baaec, #526ed0, #484cb0);
+  background-attachment: fixed; /* Orqa fon har doim joyida qoladi */
+  background-size: cover; /* Orqa fonni moslashtirish */
+  background-repeat: no-repeat;
   color: #fff;
+  min-height: 100vh; /* Kamida butun ekran balandligini oladi */
+  display: flex;
+  flex-direction: column; /* Ichidagi elementlarni vertikal joylash */
+  align-items: center; /* Markaziy joylash */
 }
+
 
 .container {
   background: #fff;
@@ -61,9 +73,7 @@ body {
   flex-shrink: 0; /* Tugmalarni kichrayib ketishidan saqlash */
   font-size: 18px;
   transition: all 0.3s ease;
-  /* align-items:center;
-  display: flex;
-  justify-content: center; */
+
 }
 
 .header button:hover {
